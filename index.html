@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <style>
       p {
-        font-size: 10px;
+        font-size: 14px;
+        padding: 15px;
       }
       h1 {
         font-size: 20px;
@@ -13,13 +14,176 @@
       p.news {
         color: #553333;
       }
+      #red {
+        color: red;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .cascade {
+        font-size: 25px;
+      }
+      .border {
+        border: 1px solid #000;
+      }
+      #no-border {
+        border-style: none;
+      }
+      .violet {
+        color: violet;
+      }
+      .important {
+        text-align: center;
+      }
+      .big {
+        font-size: 60px;
+      }
+      .weight {
+        font-weight: bold;
+      }
+      .italic-type {
+        font-style: oblique;
+      }
+      .small-capitals {
+        font-variant: small-caps;
+      }
+      .line {
+        text-decoration: underline;
+      }
+      .line-height {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .verdana-text {
+        font-family: Verdana, sans-serif;
+      }
+      .bold-text {
+        font: normal bold 24px Verdana, sans-serif;
+      }
+      .border-bold {
+        border: 5px solid #2196f3;
+      }
+      .background {
+        background-color: #2196f3;
+      }
+      .padding {
+        padding: 10px 20px 15px;
+      }
+      .margin {
+        margin: 20px;
+      }
+      .rectangle {
+        width: 300px;
+        height: 100px;
+        background-color: #000;
+        color: white;
+      }
+      .card-hello {
+        background-color: #fa7268;
+        color: #ffffff;
+        width: 230px;
+        height: 25px;
+        padding: 20px;
+        margin: 10px;
+        border: 2px solid #9c27b0;
+        font-size: 20px;
+      }
+      .header {
+        font-size: 22px;
+      }
+      .offer {
+        font-size: 200%;
+      }
+      .background-black-50 {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      @media (max-width: 750px) {
+        .white-text-mobile {
+          color: #ffffff;
+        }
+      }
+      @keyframes black-white-color-change {
+        0% {
+          color: #000;
+        }
+        50% {
+          color: rgb(122, 122, 122);
+        }
+        100% {
+          color: #ffffff;
+        }
+      }
+      .black-white {
+        animation: black-white-color-change 2s infinite;
+      }
+      :root {
+        --main-blue: #00bfff;
+      }
+      .blue-text {
+        color: var(--main-blue);
+      }
+      .relative-position {
+        position: relative;
+        top: 100px;
+        right: 50px;
+      }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <p>For task4</p>
-    <h1>For task5</h1>
-    <p class="news">For task6</p>
+    <p>For task 4 - Writing css in the style tag</p>
+    <h1>For task 5 - Basic tag styles</h1>
+    <p class="news">For task 6 - Classes</p>
+    <p id="red" class="bold">For task 7 - Selectors</p>
+    <p class="cascade">For task 8 - Cascading</p>
+    <p class="border" id="no-border">For task 9 - Style priority</p>
+    <p><span class="violet">For task 10 - Colors</span></p>
+    <p class="important">For task 11 - Text alignment</p>
+    <p class="big">For task 12 - Font size</p>
+    <p class="weight">For task 13 - Font weight</p>
+    <p class="italic-type">For task 14 - Italics</p>
+    <p class="small-capitals">For task 15 - Capitol</p>
+    <p class="line">For task 16 - Horizontal line</p>
+    <p class="line-height">
+      For task 17 - Line spacing:<br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet
+      nostrum numquam est saepe neque. Id illo nulla nesciunt iusto quod fugiat?
+      Perspiciatis consectetur deserunt molestiae nihil quod voluptatum, dolorum
+      impedit eveniet hic?
+    </p>
+    <p class="verdana-text">For task 18 - Font family</p>
+    <p class="bold-text">For task 19 - Generalized font rule</p>
+    <p>For task 20 - The basic rules of typography</p>
+    <div class="border-bold">
+      <p>For task 21 - Frames and borders</p>
+    </div>
+    <div class="background">
+      <p>For task 22 - Backgrounds</p>
+    </div>
+    <p class="padding">
+      For task 23 - Padding:<br />
+      Что делает верстальщик? Создаёт страницы с помощью HTML и CSS. Умеет
+      пользоваться возможностями модулей Flex и Grid. Использует препроцессор
+      SASS, шаблонизатор Pug и собирает проекты с помощью Gulp. Следит за
+      доступностью сайта, создавая семантически правильную разметку. Создаёт
+      компоненты и утилиты на Bootstrap. Верстает адаптивные проекты
+    </p>
+    <div class="margin">
+      <p>For task 24 - Margin</p>
+    </div>
+    <div class="rectangle">For task 25 - Block height and width</div>
+    <div class="card-hello">For task 26 - Block model</div>
+    <p>For task 27 - Prefixes</p>
+    <div class="header">
+      <p class="offer">For task 28 - Sizing</p>
+    </div>
+    <p class="background-black-50">For task 29 - RGBA color model</p>
+    <p class="white-text-mobile">For task 30 - Media queries</p>
+    <p class="black-white">For task 31 - Animations</p>
+    <p class="blue-text">For task 32 - Variables</p>
+    <div class="relative-position">
+      <p>For task 33 - Positioning</p>
+    </div>
   </body>
 </html>
